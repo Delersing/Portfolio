@@ -1,7 +1,6 @@
 {
-	"name": "portfolio_starter",
+	"name": "portfolio_project",
 	"version": "1.0.0",
-	"description": "",
 	"main": "gulpfile.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -26,5 +25,14 @@
 	],
 	"dependencies": {
 		"gulp-imagemin": "^7.1.0"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Delersing/Portfolio.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Delersing/Portfolio/issues"
+	},
+	"homepage": "https://github.com/Delersing/Portfolio#readme",
+	"description": ""
 }
