@@ -1,0 +1,28 @@
+.experience {
+    padding-top: 120px;
+
+    .container {
+        padding: 0px 65px;
+    }
+
+    .divider {
+        margin-top: 25px;
+    }
+
+    &__title {
+        text-align: center;
+
+        span {
+            position: relative;
+            @include before_circle;
+
+            &:before {
+                left: 10%
+            }
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+}

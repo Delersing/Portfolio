@@ -1,0 +1,87 @@
+.about_me {
+    padding-top: 120px;
+
+    &__wrapper {
+        display: flex;
+        gap: 68px;
+    }
+
+    &__text {
+        margin-top: 14px;
+    }
+
+    &__subtitle {
+        @include before_circle;
+        position: relative;
+        z-index: 2;
+        margin-top: 6px;
+        padding-left: 10px;
+    }
+
+    &__skills {
+        display: flex;
+        margin-top: 21px;
+        gap: 50px;
+    }
+
+    &__web {
+        position: relative;
+        padding-left: 60px;
+        @include before_circle;
+
+        &:before {
+            top: -0%;
+
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 4%;
+            left: 3%;
+            width: 36px;
+            height: 36px;
+            display: block;
+            background-image: url("../icons/about_me/web_development.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+    }
+
+    &__design {
+        position: relative;
+        padding-left: 60px;
+        @include before_circle;
+
+        &:before {
+            top: -0%;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: 4%;
+            left: 3%;
+            width: 36px;
+            height: 36px;
+            display: block;
+            background-image: url("../icons/about_me/design.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+    }
+
+    &__title {
+        margin-top: 6px;
+        font-weight: bold;
+    }
+
+    .divider {
+        margin-right: 100%;
+        margin-top: 6px;
+    }
+}
