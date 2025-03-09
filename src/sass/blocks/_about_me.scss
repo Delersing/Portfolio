@@ -22,9 +22,11 @@
         display: flex;
         margin-top: 21px;
         gap: 50px;
+        flex-wrap: wrap;
     }
 
     &__web {
+        width: 260px;
         position: relative;
         padding-left: 60px;
         @include before_circle;
@@ -51,6 +53,7 @@
     }
 
     &__design {
+        width: 260px;
         position: relative;
         padding-left: 60px;
         @include before_circle;
