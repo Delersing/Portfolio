@@ -28,5 +28,25 @@
         }
     }
 
+    &__link {
+        .sidepanel__path {
+            transition: 0.3s all;
+        }
+
+        svg:hover .sidepanel__path {
+            display: block;
+            fill: red;
+        }
+    }
+
+
+
+    // &__svg path {
+    //     transition: 0.5s all;
+
+    //     &:hover {
+    //         fill: red;
+    //     }
+    // }
 
 }
