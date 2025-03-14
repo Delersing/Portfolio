@@ -12,6 +12,11 @@
             position: relative;
             z-index: 2;
             padding-left: 10px;
+            padding-top: 6px;
+
+            &:before {
+                top: 0%;
+            }
         }
 
         .divider {
