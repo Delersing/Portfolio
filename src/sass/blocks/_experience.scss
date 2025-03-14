@@ -9,20 +9,117 @@
         margin-top: 25px;
     }
 
-    &__title {
-        text-align: center;
 
-        span {
+
+    &__subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    .title.title_fz16.experience__title {
+        margin: 0;
+        position: relative;
+        text-align: center;
+        @include before_circle;
+
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__wrapper {
+        padding: 60px 65px 0px 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+
+    &__body {
+        font-weight: 500;
+    }
+
+    &__items {
+        &-title {
             position: relative;
-            @include before_circle;
+            padding-left: 35px;
 
             &:before {
-                left: 10%
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    background-color: #000;
+                    top: -16px;
+                    left: 0px;
+
+                }
             }
         }
     }
 
-    &__subtitle {
-        text-align: center;
+    &__item {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            background-color: #000;
+            position: absolute;
+            top: 68px;
+        }
+
+        &-head {
+            position: relative;
+            padding-left: 100px;
+            padding-top: 45px;
+
+            h4 {
+                margin-bottom: 0px;
+            }
+        }
+
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+        }
+
+        &-icon {
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            @include before_circle;
+
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+
+        &-location {
+            margin-top: 3px;
+        }
     }
 }

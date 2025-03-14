@@ -1,0 +1,37 @@
+.skills {
+    padding-top: 120px;
+
+    &__title {
+        margin: 0;
+        position: relative;
+        text-align: center;
+        @include before_circle;
+
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    .divider {
+        margin-top: 25px;
+    }
+
+    &__wrapper-grid {
+        padding: 60px 10px 0px 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        gap: 15px;
+    }
+
+    &__grid-items {
+        border: 2px solid #000;
+        padding: 30px;
+    }
+}
