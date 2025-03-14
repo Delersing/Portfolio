@@ -44,6 +44,7 @@
         position: relative;
         width: 345px;
         background-color: $main-color;
+        min-height: 500px;
         height: 100%;
         padding-top: 140px;
         padding-left: 40px;
@@ -94,6 +95,7 @@
 
     &__social {
         position: absolute;
+        top: 93%;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
