@@ -1,0 +1,39 @@
+.price {
+    padding-top: 60px;
+
+    &__title {
+        margin: 0;
+        position: relative;
+        text-align: center;
+        @include before_circle;
+
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .divider {
+        margin-top: 25px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 44px);
+        column-gap: 300px;
+        row-gap: 15px;
+        padding: 60px 75px 0px 75px;
+    }
+
+    &__prices {
+        position: absolute;
+        top: 0px;
+        right: 2px;
+    }
+
+    .grid__elem-items {
+        position: relative
+    }
+}
