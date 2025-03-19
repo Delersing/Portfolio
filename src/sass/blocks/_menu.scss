@@ -101,8 +101,13 @@
         transform: translateX(-50%);
         width: 90px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 25px;
+
+        a {
+            height: 100%;
+        }
     }
 
     &__overlay {

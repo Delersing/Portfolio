@@ -29,6 +29,10 @@
     }
 
     &__link {
+        svg {
+            display: block;
+        }
+
         .sidepanel__path {
             transition: 0.3s all;
         }
