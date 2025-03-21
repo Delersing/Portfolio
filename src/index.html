@@ -117,8 +117,8 @@
             <div class="title title_fz16 promo__subtitle">Меня зовут Иван Мороз</div>
             <h1 class="title title_fz48 promo__title">Я web-разработчик из города Гомель</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn_t">Про меня</a>
-                <a href="#" class="promo__link btn">Портфолио</a>
+                <a href="#me" class="promo__link btn_t">Про меня</a>
+                <a href="#work" class="promo__link btn">Портфолио</a>
             </div>
         </div>
     </section>
@@ -280,7 +280,7 @@
                         сервера и многое другое</div>
                 </div>
                 <div class="skills__grid-items">
-                    <div class="skills__elem__img-block"><img src="icons/skills/jquery.svg" alt="Jquery"
+                    <div class="skills__elem__img-block" id="jquery"><img src="icons/skills/jquery.svg" alt="Jquery"
                             class="skills__elem-img"></div>
                     <h3 class="skills__elem-title">Jquery</h3>
                     <div class="skills__elem-text">Библиотека Jquery позволит ускорить разработку. Без необходимости
@@ -413,6 +413,53 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="img/main_photo.jpg" alt="my photo">
+                </div>
+                <div class="contacts__descr">
+                    <h2 class="title title_fz16 contacts__title">Контакты</h2>
+                    <h3 class="title title_fz36 contacts__subtitle">Свяжитесь со мной</h3>
+                    <div class="divider"></div>
+                    <div class="title title_fz14 contacts__text">
+                        Любым удобным для вас способом:
+                    </div>
+                    <div class="contacts__social">
+                        <a href="https://github.com/Delersing" class="contacts__link">
+                            <img src="icons/social/github-no-rotated.svg" alt="github" class="gith">
+                        </a>
+                        <a href="https://t.me/Virusick" class="contacts__link contacts__link_t" class="teleg">
+                            <img src="icons/social/telegram.svg" alt="telegram">
+                        </a>
+                    </div>
+                    <div class="title title_fz14 contacts__text">
+                        Или оставьте ваши данные и я сама вам напишу:
+                    </div>
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required name="name" type="text" id="name">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" type="email" id="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div class="contacts__triggers"><button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox" name="checkbox" id="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
     </section>
     <a href="#up" class="pageup"><img src="icons/other/circle-up-regulars.svg" alt="circle up"></a>
     <script src="js/script.js"></script>

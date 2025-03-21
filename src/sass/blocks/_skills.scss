@@ -8,7 +8,7 @@
         @include before_circle;
 
         &:before {
-            top: -5px;
+            top: -8px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -33,6 +33,13 @@
 
         .skills__elem__img-block {
             height: 65px;
+
+        }
+
+        #jquery {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .skills__elem-title {
