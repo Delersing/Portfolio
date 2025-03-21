@@ -1,8 +1,16 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url("../img/main_bg.jpg") center center / cover no-repeat;
+    background-color: #BFE8FC;
+    background-size: cover;
     padding-top: 205px;
+
+    &__cat {
+        position: absolute;
+        top: 350px;
+        right: 10%;
+        scale: 1.2;
+    }
 
     &__title {
         width: 535px;
@@ -27,6 +35,16 @@
         &:hover {
             color: #000;
             text-decoration: none;
+        }
+
+        &.btn {
+            background: none;
+            box-shadow: none;
+
+            &:hover {
+                background: $main-color;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            }
         }
     }
 

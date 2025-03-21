@@ -107,6 +107,11 @@
 
         a {
             height: 100%;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.08);
+            }
         }
     }
 

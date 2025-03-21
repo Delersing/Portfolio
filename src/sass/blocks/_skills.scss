@@ -8,7 +8,7 @@
         @include before_circle;
 
         &:before {
-            top: -8px;
+            top: -6px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -83,7 +83,7 @@
             }
 
             .divider-bar {
-                background-color: #E8E4DE;
+                background-color: #d9d5d0;
                 margin: 0;
                 position: absolute;
                 bottom: 0;

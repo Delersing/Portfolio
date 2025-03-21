@@ -9,16 +9,15 @@
     }
 
     &__photo {
-        img {
-            width: 100%;
-        }
+        background-image: url("../img/my_portfolio_photo/faith.jpg");
+        background-size: cover;
     }
 
     &__title {
         @include before_circle;
         position: relative;
         padding-left: 10px;
-        padding-top: 9px;
+        padding-top: 7px;
 
         &:before {
             top: 0%;
@@ -113,6 +112,10 @@
         font-size: 14px;
         line-height: 21px;
         font-weight: bold;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__triggers {

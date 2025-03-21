@@ -23,7 +23,7 @@
         @include before_circle;
 
         &:before {
-            top: -8px;
+            top: -6px;
             left: 50%;
             transform: translateX(-50%);
         }
