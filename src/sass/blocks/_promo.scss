@@ -2,12 +2,12 @@
     min-height: 100vh;
     position: relative;
     background-color: #BFE8FC;
-    background-size: cover;
     padding-top: 205px;
+    padding-bottom: 200px;
 
     &__cat {
         position: absolute;
-        top: 350px;
+        top: 300px;
         right: 10%;
         scale: 1.2;
     }

@@ -95,15 +95,15 @@
 
     &__social {
         position: absolute;
-        top: 93%;
-        bottom: 50px;
+        top: 90%;
         left: 50%;
         transform: translateX(-50%);
         width: 90px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 25px;
+        gap: 30px;
 
         a {
             height: 100%;

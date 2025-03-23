@@ -9,8 +9,9 @@
         gap: 60px;
 
         &-elem__img {
-            background-image: url("../img/my_portfolio_photo/sand-no-vision.jpg");
-            background-size: cover;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h2 {
