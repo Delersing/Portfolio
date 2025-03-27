@@ -38,6 +38,11 @@
     <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon//android-icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon//android-icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon//android-icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon//android-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon//android-icon-144x144.png">
     <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon//android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
@@ -126,7 +131,21 @@
     <section class="about" id="me">
         <div class="container">
             <div class="about__grid">
-                <img src="img/my_portfolio_photo/grass.jpg" alt="sand" class="about__grid-elem__img">
+                <!--В тег Img можно подгрузить атрибут srcset, куда можно загрузить медиа правила и в зависимости от них можно менять изображение. Подходит для одной и той же картинки, разница в размерах-->
+                <!-- <img srcset="img/main_photo-min.jpg 300w, 
+                            img/main_photo.jpg 400w" sizes="(max-width: 576px) 280px,
+                            (min-width: 577px) 400px" src="img/main_photo.jpg" alt="photo"
+                    class="about__grid-elem__img"> -->
+
+                <!-- <picture>
+                    <source media="(max-width: 576px)" srcset="img/my_portfolio_photo/faith.jpg">
+                    <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                    <img src="img/main_photo.jpg" alt="photo" class="about__grid-elem__img">
+                </picture> -->
+                <picture>
+                    <source type="image/webp" srcset="img/main_photo.webp">
+                    <img src="img/main_photo.jpg" alt="photo" class="about__grid-elem__img">
+                </picture>
                 <div class="about__grid__items">
                     <div class="title-block">
                         <h2 class="title title_fz16">Про меня</h2>
@@ -140,7 +159,7 @@
                         высот и слаженной работы в команде над совместным продуктом, я всё ещё совершенствуюсь, ведь вся
                         жизнь программиста и построена на постоянном обучении и освоении новых технологий и навыков, я
                         надеюсь, эта профессия поможет мне раскрыть весь мой потенциал и даст мне различные возможности
-                        ля реализации себя в жизни. Спасибо, это было небольшое превью моих мыслей и стремлений.</p>
+                        для реализации себя в жизни. Спасибо, это было небольшое превью моих мыслей и стремлений.</p>
                     <div class="about__subgrid">
                         <div class="skill__img">
                             <img src="icons/about/web_development.svg" alt="web">
@@ -165,7 +184,7 @@
             </div>
         </div>
     </section>
-    <!-- <section class="experience" id="exp">
+    <section class="experience" id="exp">
         <div class="container">
             <h2 class="title title_fz16 experience__title">
                 Опыт
@@ -248,7 +267,7 @@
             </div>
         </div>
     </section>
-    <section class="skills" id="skill">
+    <!--<section class="skills" id="skill">
         <div class="container">
             <h2 class="title title_fz16 skills__title">
                 Навыки

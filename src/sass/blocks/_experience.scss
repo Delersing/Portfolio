@@ -1,10 +1,6 @@
 .experience {
     padding-top: 120px;
 
-    .container {
-        padding: 0px 65px;
-    }
-
     .divider {
         margin-top: 25px;
     }
@@ -32,7 +28,7 @@
     &__wrapper {
         padding: 60px 65px 0px 65px;
         display: grid;
-        grid-template-columns: repeat(2, 425px);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 135px;
     }
 

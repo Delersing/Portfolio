@@ -12,7 +12,6 @@ close.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
-
 percent.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
