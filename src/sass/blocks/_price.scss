@@ -28,9 +28,12 @@
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3, auto);
         justify-content: space-between;
-
         row-gap: 15px;
         padding: 60px 75px 0px 75px;
+
+        h2 {
+            width: 63%;
+        }
     }
 
     &__prices {

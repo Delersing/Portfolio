@@ -69,27 +69,29 @@
         line-height: normal;
         margin-bottom: 15px;
 
-        &:before {
-            content: '';
-            position: absolute;
-            left: -35px;
-            top: 10px;
-            width: 15px;
-            height: 15px;
-            border-radius: 100%;
-            border: 1px solid #000;
-            transition: all 0.3s;
-        }
 
-        &:hover {
-            &:before {
-
-                background-color: #FFF;
-            }
-        }
 
         a {
             color: #FFF;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: -35px;
+                top: 10px;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                border: 1px solid #000;
+                transition: all 0.3s;
+            }
+
+            &:hover {
+                &:before {
+
+                    background-color: #FFF;
+                }
+            }
         }
     }
 
