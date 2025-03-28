@@ -27,7 +27,7 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3, auto);
-        column-gap: 300px;
+        justify-content: space-between;
 
         row-gap: 15px;
         padding: 60px 75px 0px 75px;

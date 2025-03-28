@@ -104,6 +104,46 @@
         grid-template-columns: repeat(auto-fit, 335px);
         column-gap: 25px;
     }
+
+    .works {
+        &__grid {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-template-rows: repeat(2, 280px);
+            grid-auto-rows: 280px;
+            gap: 10px;
+            justify-content: center;
+
+            #grid-elem-uber {
+                grid-column: unset;
+                grid-row: unset;
+            }
+
+            #grid-elem-rose {
+                grid-column: unset;
+                grid-row: unset;
+            }
+        }
+    }
+
+    .price {
+        &__grid {
+            grid-template-columns: repeat(auto-fit, 235px);
+            grid-template-rows: repeat(3, auto);
+            justify-content: space-around;
+            row-gap: 15px;
+            padding: 60px 15px 0 15px;
+
+            h2,
+            .title.title_fz16.price__prices {
+                font-size: 14px;
+                margin-bottom: 0px;
+            }
+
+            h3 {
+                font-size: 12px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -161,19 +201,59 @@
         }
     }
 
-    .experience__wrapper {
-        grid-template-columns: 1fr;
-        row-gap: 40px;
-        padding: 40px 10px 0px 10px;
+    .experience {
+        padding-top: 40px;
+
+        .experience__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+            padding: 40px 10px 0px 10px;
+        }
     }
 
-    .skills__wrapper-grid {
-        grid-template-columns: repeat(auto-fit, 255px);
+    .skills {
+        padding-top: 40px;
+
+        &__wrapper-grid {
+            grid-template-columns: repeat(auto-fit, 255px);
+        }
+
+        &__bars__wrapper-grid {
+            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, 245px);
+            column-gap: 25px;
+        }
     }
 
-    .skills__bars__wrapper-grid {
-        grid-template-columns: repeat(auto-fit, 245px);
-        column-gap: 25px;
+
+    .works {
+        padding-top: 40px;
+
+        &__grid {
+            grid-template-columns: repeat(auto-fit, 260px);
+            grid-template-rows: repeat(2, 260px);
+            grid-auto-rows: 260px;
+        }
+    }
+
+    .price {
+        &__grid {
+            grid-template-columns: repeat(auto-fit, 235px);
+            grid-template-rows: repeat(3, auto);
+            justify-content: space-between;
+            row-gap: 15px;
+            padding: 60px 15px 0 15px;
+
+            h2,
+            .title.title_fz16.price__prices {
+                font-size: 14px;
+                margin-bottom: 0px;
+            }
+
+            h3 {
+                font-size: 12px;
+            }
+        }
     }
 }
 
