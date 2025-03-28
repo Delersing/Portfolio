@@ -26,10 +26,10 @@
     &__wrapper-grid {
         padding: 60px 10px 0px 10px;
         display: grid;
-        grid-template-columns: repeat(4, 270px);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, 270px);
         grid-template-rows: auto;
-        gap: 15px;
+        justify-content: center;
+        gap: 10px;
 
         .skills__elem__img-block {
             height: 65px;
@@ -61,10 +61,11 @@
     &__bars__wrapper-grid {
         margin-top: 120px;
         display: grid;
-        grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(2, 70px);
+        grid-template-columns: repeat(auto-fit, 350px);
+        grid-auto-rows: minmax(70px, auto);
         column-gap: 45px;
         row-gap: 30px;
+        justify-content: center;
 
         .skills__bars__items {
             position: relative;

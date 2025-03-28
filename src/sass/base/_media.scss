@@ -99,6 +99,11 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 80px;
     }
+
+    .skills__bars__wrapper-grid {
+        grid-template-columns: repeat(auto-fit, 335px);
+        column-gap: 25px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -161,6 +166,15 @@
         row-gap: 40px;
         padding: 40px 10px 0px 10px;
     }
+
+    .skills__wrapper-grid {
+        grid-template-columns: repeat(auto-fit, 255px);
+    }
+
+    .skills__bars__wrapper-grid {
+        grid-template-columns: repeat(auto-fit, 245px);
+        column-gap: 25px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -179,13 +193,18 @@
         }
     }
 
-    .promo {
-        .title {
-            &_fz48 {
-                font-size: 28px;
-            }
+
+    .title {
+        &.title_fz36 {
+            font-size: 23px;
         }
 
+        &.title_fz48 {
+            font-size: 30px;
+        }
+    }
+
+    .promo {
         .hamburger {
             right: 20px;
         }
@@ -215,7 +234,7 @@
 
         .title {
             &_fz48 {
-                font-size: 28px;
+                font-size: 23px;
             }
         }
 
@@ -239,15 +258,32 @@
         }
     }
 
+    .skills__bars__wrapper-grid {
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
 }
 
 @media (max-width: 320px) {
-    .promo {
-        .title {
-            &_fz48 {
-                font-size: 30px;
-            }
+    .title {
+        &.title_fz48 {
+            font-size: 23px;
         }
+
+        &.title_fz36 {
+            font-size: 23px;
+        }
+    }
+
+    .promo {
+        .title.title_fz48.promo__title {
+            font-size: 30px;
+        }
+
+        &_fz48 {
+            font-size: 30px;
+            width: 285px;
+        }
+
 
         &__cat {
             scale: 0.6;
@@ -268,4 +304,52 @@
             gap: 15px;
         }
     }
+
+    .experience__subtitle {
+        font-size: 28px;
+    }
+
+    .experience__item {
+        &::before {
+            width: 28px;
+            top: 48px;
+        }
+
+        &-icon {
+            top: 30px;
+
+            &::before {
+                left: -18px;
+            }
+
+            img {
+                left: 0px;
+            }
+        }
+
+        &-head {
+            padding-left: 85px;
+            padding-top: 25px
+        }
+
+        &-body {
+            padding-left: 28px;
+        }
+    }
+
+    .skills {
+        &__bars__wrapper-grid {
+            grid-template-columns: repeat(auto-fit, 100%);
+        }
+
+        .skills__subtitle {
+            font-size: 23px;
+        }
+
+        .skills__wrapper-grid {
+            row-gap: 20px;
+            column-gap: 0px;
+        }
+    }
+
 }
