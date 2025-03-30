@@ -9,7 +9,7 @@
     }
 
     &__photo {
-        //можно сделать и через тег Img с object-fit: 100% и width: 100% и height: 100%, это прост оальтернативный вариант через div
+        //можно сделать и через тег Img с object-fit: cover, width: 100% и height: 100%, это прост оальтернативный вариант через div
         background-image: url("../img/my_portfolio_photo/faith.jpg");
         background-size: cover;
     }
